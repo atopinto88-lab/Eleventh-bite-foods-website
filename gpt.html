@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>11TH BITE FOODS</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* HEADER */
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#000;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    /* LOGO */
+
+    .logo{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .logo-top{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo-top i{
+      color:#ffb703;
+      font-size:32px;
+    }
+
+    .logo h1{
+      font-size:30px;
+      color:#ffb703;
+    }
+
+    .logo p{
+      font-size:12px;
+      color:#ccc;
+      margin-top:2px;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#ffb703;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content h2{
+      font-size:65px;
+      margin-bottom:20px;
+    }
+
+    .hero-content span{
+      color:#ffb703;
+    }
+
+    .hero-content p{
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+      color:#ddd;
+      margin-bottom:30px;
+      font-size:18px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border:none;
+      border-radius:40px;
+      background:#ffb703;
+      color:black;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    /* MENU */
+
+    .menu{
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .menu h2{
+      font-size:45px;
+      color:#ffb703;
+      margin-bottom:50px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1b1b1b;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+      box-shadow:0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#ffb703;
+      margin-bottom:10px;
+    }
+
+    .price{
+      margin:15px 0;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      padding:80px 8%;
+      background:#181818;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:45px;
+      color:#ffb703;
+      margin-bottom:25px;
+    }
+
+    .contact p{
+      margin:12px 0;
+      font-size:18px;
+      color:#ddd;
+    }
+
+    .contact i{
+      color:#25D366;
+      margin-right:10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#000;
+      color:#999;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero-content h2{
+        font-size:45px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .logo h1{
+        font-size:22px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+
+      <div class="logo-top">
+
+        <i class="fa-solid fa-hat-chef"></i>
+
+        <h1>11TH BITE FOODS</h1>
+
+      </div>
+
+      <p>Every 11th Bite Tells A Story</p>
+
+    </div>
+
+    <nav>
+
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h2>
+        Delicious <span>Chicken Rolex</span>
+      </h2>
+
+      <p>
+        Welcome to 11TH BITE FOODS —
+        serving fresh, tasty and satisfying chicken rolex
+        made with passion and rich flavor.
+      </p>
+
+      <button class="btn" onclick="orderNow()">
+        Order Now
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- MENU -->
+
+  <section class="menu" id="menu">
+
+    <h2>Our Chicken Rolex</h2>
+
+    <div class="menu-grid">
+
+      <!-- CARD 1 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Classic Chicken Rolex</h3>
+
+          <p>
+            Soft chapati filled with juicy chicken,
+            eggs and fresh vegetables.
+          </p>
+
+          <div class="price">
+            UGX 10,000
+          </div>
+
+          <button class="btn">
+            Add To Cart
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Spicy Chicken Rolex</h3>
+
+          <p>
+            Hot spicy chicken rolex with rich sauce
+            and extra flavor.
+          </p>
+
+          <div class="price">
+            UGX 12,000
+          </div>
+
+          <button class="btn">
+            Add To Cart
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="card">
+
+        <img src="iMAGES/Pasted image.png">
+
+        <div class="card-content">
+
+          <h3>Double Chicken Rolex</h3>
+
+          <p>
+            Loaded with extra chicken for true
+            food lovers.
+          </p>
+
+          <div class="price">
+            UGX 15,000
+          </div>
+
+          <button class="btn">
+            Add To Cart
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      <i class="fa-brands fa-whatsapp"></i>
+      0785509534
+    </p>
+
+    <p>
+      <i class="fa-brands fa-whatsapp"></i>
+      0705115070
+    </p>
+
+    <p>
+      📍 Location: Mbuya (Along Kireka Road)
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 11TH BITE FOODS |
+    Every 11th Bite Tells A Story
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function orderNow(){
+
+      alert(
+        "Welcome to 11TH BITE FOODS! Place your Chicken Rolex order on WhatsApp."
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
